@@ -1,5 +1,4 @@
 import React from 'react';
-import Menu from './Menu';
 import Background from '../assets/images/backgroundimage.jpg';
 import BackgroundPills from '../assets/images/pills.jpg';
 import Pharmacy from '../assets/images/pharmacy.jpg';
@@ -12,7 +11,6 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 export default function Home() {
   return (
     <div>
-      <Menu></Menu>
       <div className="shadow-sm p-3" style={{ backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -38,7 +36,7 @@ export default function Home() {
                 </Row>
             </Container>
       </div>
-      <div style={{ height: "45vh" }} align="center">
+      <div style={{ height: "55vh" }} align="center">
         <Container style={{ marginTop: "5%" }}>
           <Row>
             <Col style={{ marginLeft: "5%", marginRight: "5%" }}>
@@ -63,6 +61,17 @@ export default function Home() {
                 Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt.</p>
             </Col>
           </Row>
+          <Row style={{ marginTop: "1%" }}>
+            <Col>
+              <Button variant="danger">Więcej</Button>
+            </Col>
+            <Col>
+              <Button variant="danger">Więcej</Button>
+            </Col>
+            <Col>
+              <Button variant="danger">Więcej</Button>
+            </Col>
+          </Row>
         </Container>
       </div>
       <div className="shadow-sm p-3" style={{ backgroundPosition: 'center',
@@ -70,7 +79,6 @@ export default function Home() {
         backgroundRepeat: 'no-repeat',
         width: '100vw',
         height: '75vh', 
-        opacity: "80%",
         backgroundImage: "url(" + Pharmacy + ")" }}>
         <Container>
           <Row>
