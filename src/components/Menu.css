@@ -1,0 +1,21 @@
+.nav-links {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.links:active {
+    color: red;
+}
