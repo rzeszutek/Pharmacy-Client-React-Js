@@ -1,6 +1,5 @@
 import React from 'react';
 import Background from '../assets/images/backgroundimage.jpg';
-import BackgroundPills from '../assets/images/pills.jpg';
 import Pharmacy from '../assets/images/pharmacy.jpg';
 import { Row, Col, Container, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +9,7 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ overflowY: 'hidden', overflowX: 'hidden' }}>
       <div className="shadow-sm p-3" style={{ backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -97,12 +96,7 @@ export default function Home() {
           </Row>
         </Container>
       </div>
-      <div className="shadow-sm p-3" align="center" style={{ backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '100vh', 
-        backgroundImage: "url(" + BackgroundPills + ")" }}>
+      <div className="shadow-sm p-3" align="center" style={{ height: '75vh' }}>
         <Container>
           <h1 style={{ color: "red", marginTop: "15%" }}>Kim jesteśmy?</h1>
           <p style={{ marginTop: "3%", fontSize: 20 }}>Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. 
@@ -113,6 +107,7 @@ export default function Home() {
             Vivamus arcu felis bibendum ut tristique et egestas. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. 
             Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
             <Button style={{ marginTop: "2%" }} size="lg" variant="outline-danger">Dowiedz się więcej</Button>
+            <hr style={{ marginTop: "21%", borderColor: "red", }}></hr>
         </Container>
       </div>
     </div>
