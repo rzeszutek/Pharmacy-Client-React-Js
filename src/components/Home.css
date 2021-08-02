@@ -1,0 +1,20 @@
+.label-icon {
+    margin: 20px auto;
+    display: block;
+}
+
+.label-header {
+    color: red;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 40px 0 10px;
+}
+
+.label-text {
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.btn .btn-danger {
+    margin: 40px 0 10px;
+}
