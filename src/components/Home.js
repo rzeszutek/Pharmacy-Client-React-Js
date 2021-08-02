@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 import Background from '../assets/images/backgroundimage.jpg';
 import Pharmacy from '../assets/images/pharmacy.jpg';
 import { Row, Col, Container, Button } from 'react-bootstrap';
@@ -9,80 +10,79 @@ import { BiRightArrowAlt } from 'react-icons/bi';
 
 export default function Home() {
   return (
-    <div style={{ overflowY: 'hidden', overflowX: 'hidden' }}>
-      <div className="shadow-sm p-3" style={{ backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '65vh', 
-        backgroundImage: "url(" + Background + ")" }}>
-            <Container>
-                <Row>
-                    <Col style={{ marginTop: "15%" }}> 
-                    <h1 style={{ fontWeight: "bold", fontSize: 65 }}>Apteka Online</h1>
-                    <div style={{ marginTop: 15, fontSize: 22 }}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut
-                            labore et dolore magna aliqua. Vel turpis nunc eget lorem dolor sed.
-                            Nulla pellentesque dignissim enim sit amet venenatis. </p>
-                    </div>
-                    <div style={{ marginTop: 25 }}>
-                        <Button href="#login" variant="danger" size="lg">Zaloguj się</Button>
-                        <Button href="#signup" style={{ marginLeft: 15 }} variant="outline-danger" size="lg">Zarejestruj się</Button>
-                    </div>
-                    </Col>
-                    <Col></Col>
-                </Row>
-            </Container>
-      </div>
-      <div style={{ height: "55vh" }} align="center">
-        <Container style={{ marginTop: "5%" }}>
-          <Row>
-            <Col style={{ marginLeft: "5%", marginRight: "5%" }}>
-              <FontAwesomeIcon icon={faPills} size="4x"/>
-              <h2 style={{ color: "red", marginTop: "10%" }}>Leki</h2>
-              <p style={{ marginTop: "10%" }}>Suspendisse ultrices gravida dictum fusce. Eget dolor morbi non arcu.
-                Bibendum arcu vitae elementum curabitur vitae nunc sed.
-                Vestibulum mattis ullamcorper velit sed ullamcorper morbi. </p>
+    <div>
+      <Container fluid style={{
+        paddingLeft: "0em",
+        paddingRight: "0em"
+      }}>
+      <div style={{
+              backgroundImage: `url(${Background})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              height: "500px"
+            }}>
+        <Row style={{
+          paddingTop: "100px"
+        }}>
+          <Col sm={8} style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center"
+          }}> 
+            <div>
+              <h1 style={{ fontWeight: "bold" }}>Apteka Online</h1>
+              <p style={{ fontWeight: "500" }}>Lorem ipsum dolor sit amet, <br /> 
+                  consectetur adipiscing elit, sed do <br /> 
+                  eiusmod tempor incididunt ut labore <br /> 
+                  et dolore magna aliqua.
+              </p>
+              <Button className="loginButton" href="/login" variant="danger" size="lg" style={{ 
+                marginRight: "20px"
+               }}>Zaloguj się</Button>
+              <Button href="/signup" variant="outline-danger" size="lg">Zarejestruj się</Button>
+            </div>
             </Col>
-            <Col style={{ marginLeft: "5%", marginRight: "5%"}}>
-              <FontAwesomeIcon icon={faStarOfLife} size="4x"/>
-              <h2 style={{ color: "red", marginTop: "10%" }}>Sprzęt</h2>
-              <p style={{ marginTop: "10%" }}>Venenatis urna cursus eget nunc scelerisque viverra.
-                 Posuere lorem ipsum dolor sit. Fames ac turpis egestas integer eget. 
-                 Nisl vel pretium lectus quam id leo in vitae turpis.</p>
+        </Row>
+      </div>  
+      <div style={{
+        padding: "100px",
+        textAlign: "center"
+      }}>
+          <Row style={{
+            display: "flex",
+            justifyContent: "center"
+          }}>
+            <Col sm={8} md={4}>
+              <FontAwesomeIcon icon={faPills} size="3x" className="label-icon"/>
+              <h5 className="label-header">Leki</h5>
+              <p className="label-text">Suspendisse ultrices gravida dictum fusce.
+                  Eget dolor morbi non arcu. Bibendum arcu vitae
+                  elementum curabitur vitae nunc sed. </p>
+                 <Button className="btn btn-danger">Więcej</Button>
             </Col>
-            <Col style={{ marginLeft: "5%", marginRight: "5%" }}>
-              <FontAwesomeIcon icon={faPhone} size="4x"/>
-              <h2 style={{ color: "red", marginTop: "10%" }}>Teleporada</h2>
-              <p style={{ marginTop: "10%" }}>Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. 
-                Aliquam id diam maecenas ultricies mi eget mauris. 
-                Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt.</p>
+            <Col sm={8} md={4}>
+              <FontAwesomeIcon icon={faStarOfLife} size="3x" className="label-icon"/>
+              <h5 className="label-header">Sprzęt</h5>
+              <p className="label-text">Venenatis urna cursus eget nuncscelerisque
+                viverra. Posuere lorem ipsum dolor sit. Fames
+                ac turpis egestas integer eget.  </p>
+                <Button className="btn btn-danger">Więcej</Button>
+            </Col>
+            <Col sm={8} md={4}>
+              <FontAwesomeIcon icon={faPhone} size="3x" className="label-icon"/>
+              <h5 className="label-header">Teleporada</h5>
+              <p className="label-text">Nulla facilisi cras fermentum odio eu feugiat
+                 pretium nibh ipsum. Aliquam id diam maecenas
+                 ultricies mi eget mauris. </p>
+                <Button className="btn btn-danger">Więcej</Button>
             </Col>
           </Row>
-          <Row style={{ marginTop: "1%" }}>
-            <Col>
-              <Button variant="danger">Więcej</Button>
-            </Col>
-            <Col>
-              <Button variant="danger">Więcej</Button>
-            </Col>
-            <Col>
-              <Button variant="danger">Więcej</Button>
-            </Col>
-          </Row>
-        </Container>
       </div>
-      <div className="shadow-sm p-3" style={{ backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '75vh', 
-        backgroundImage: "url(" + Pharmacy + ")" }}>
-        <Container>
+      <div className="shadow-sm p-3">
           <Row>
-            <Col></Col>
-            <Col>
+            <Col md={3} sm={6} xs={6}></Col>
+            <Col md={3} sm={6} xs={6}>
               <h1 style={{ marginTop: "15%", fontWeight: "bold" }}>Usługi</h1>
               <ul style={{ marginTop: "15%", listStyle: "none"}}>
                 <li style={{ display: "flex" }}><BiRightArrowAlt style={{ width: 25, height: 25, color: "red" }}/><p>Cursus risus at ultrices mi tempus imperdiet nulla malesuada.</p></li>
@@ -94,10 +94,8 @@ export default function Home() {
               </ul>
             </Col>
           </Row>
-        </Container>
       </div>
-      <div className="shadow-sm p-3" align="center" style={{ height: '75vh' }}>
-        <Container>
+      <div className="shadow-sm p-3" align="center" >
           <h1 style={{ color: "red", marginTop: "15%" }}>Kim jesteśmy?</h1>
           <p style={{ marginTop: "3%", fontSize: 20 }}>Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. 
             Et malesuada fames ac turpis egestas maecenas pharetra convallis.
@@ -108,8 +106,8 @@ export default function Home() {
             Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
             <Button style={{ marginTop: "2%" }} size="lg" variant="outline-danger">Dowiedz się więcej</Button>
             <hr style={{ marginTop: "21%", borderColor: "red", }}></hr>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </div>
   );
 }

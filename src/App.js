@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Medicines from './components/Medicines';
 import Equipment from './components/Equipment';
 import Prescriptions from './components/Prescriptions';
+import Contact from './components/Contact';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -16,9 +17,10 @@ function App() {
         <Menu></Menu>
         <Switch> 
           <Route exact path="/" component={Home}/>
-          <Route path="/medicines" component={Medicines}/>
+          <Route path="/medicine" component={Medicines}/>
           <Route path="/equipment" component={Equipment}/>
-          <Route path="/prescriptions" component={Prescriptions}/>
+          <Route path="/prescription" component={Prescriptions}/>
+          <Route path="/contact" component={Contact}/>
           <Route path="/login" component={Login}/>
           <Route path="/signup" component={SignUp}/>
         </Switch>

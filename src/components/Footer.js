@@ -22,14 +22,14 @@ export default function Footer() {
         height: '100vh', 
         backgroundImage: "url(" + BackgroundPills + ")" }}>
             <Row style={{ marginTop: "12%" }}>
-                <Col className="column-class">
+                <Col md={3} sm={6} xs={6} className="column-class">
                     <h2 className="header-class">
                         <FaHeartbeat className="icons-class"/>
                         Apteka Online
                     </h2>
                     <p className="text-class">All copyrights reserved 2021.</p>
                 </Col>
-                <Col className="column-class">
+                <Col md={3} sm={6} xs={6} className="column-class">
                     <h2 className="header-class">Kontakt</h2>
                     <p className="text-class">
                         <FiMapPin className="icons-class"/>
@@ -40,7 +40,7 @@ export default function Footer() {
                         692 721 022 
                     </p>
                 </Col>
-                <Col className="column-class">
+                <Col md={3} sm={6} xs={6} className="column-class">
                     <h2 className="header-class">Aplikacja</h2>
                     <p className="text-class">
                         <FaReact className="icons-class"/>
@@ -51,7 +51,7 @@ export default function Footer() {
                         <br />
                     </p>
                 </Col>
-                <Col className="column-class">
+                <Col md={3} sm={6} xs={6} className="column-class">
                     <Link className="links" to=""><FaFacebookSquare className="icons-class"/></Link>
                     <Link className="links" to=""><FaTwitter className="icons-class"/></Link>
                 </Col>
