@@ -1,13 +1,13 @@
 import './App.css';
-import Menu from './components/Menu';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Medicines from './components/Medicines';
-import Equipment from './components/Equipment';
-import Prescriptions from './components/Prescriptions';
-import Contact from './components/Contact';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Menu from './components/Menu/Menu.js';
+import Footer from './components/Footer/Footer.js';
+import Home from './components/Home/Home.js';
+import Medicine from './components/Medicines/Medicine.js';
+import Equipment from './components/Equipment/Equipment.js';
+import Prescription from './components/Prescription/Prescription.js';
+import Contact from './components/Contact/Contact.js';
+import Login from './components/Login/Login.js';
+import SignUp from './components/SignUp/SignUp.js';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
         <Menu></Menu>
         <Switch> 
           <Route exact path="/" component={Home}/>
-          <Route path="/medicine" component={Medicines}/>
+          <Route path="/medicine" component={Medicine}/>
           <Route path="/equipment" component={Equipment}/>
-          <Route path="/prescription" component={Prescriptions}/>
+          <Route path="/prescription" component={Prescription}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/login" component={Login}/>
           <Route path="/signup" component={SignUp}/>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Medicines() {
+export default function Medicine() {
     return (
         <div>
             Leki

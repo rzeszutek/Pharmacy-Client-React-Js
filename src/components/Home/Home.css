@@ -1,0 +1,62 @@
+.label-icon {
+    margin: 20px auto;
+    display: block;
+}
+
+.label-header {
+    color: red;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 40px 0 10px;
+}
+
+.label-text {
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.btn .btn-danger {
+    margin: 40px 0 10px;
+}
+
+.list-wrapper {
+    list-style: none;
+    font-weight: 500;
+    line-height: 30px;
+    padding-top: 5%;
+}
+
+.list-element {
+    width: 25px;
+    height: 25px;
+    color: red;
+}
+
+.a-wrapper, .a-wrapper:hover {
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.services-wrapper {
+     margin-left: 50%;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.who-wrapper {
+    display: block;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+}
+
+.span-wrapper {
+    display: block;
+    padding: 10px 30px;
+}

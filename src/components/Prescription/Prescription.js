@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Prescriptions() {
+export default function Prescription() {
     return(
         <div>
             Prescriptions
