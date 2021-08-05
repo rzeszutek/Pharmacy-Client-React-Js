@@ -16,14 +16,14 @@ export default function Footer() {
         <div className="footer">
             <div class="line-wrapper"></div>
             <Row style={{ paddingTop: "100px" }}>
-                <Col md={3} sm={6} className="column-class">
+                <Col md={3} className="column-class">
                     <h2 className="header-class">
                         <FaHeartbeat className="icons-class"/>
                         Apteka Online
                     </h2>
                     <p className="text-class">All copyrights reserved 2021.</p>
                 </Col>
-                <Col md={3} sm={6} className="column-class">
+                <Col md={3} className="column-class">
                     <h2 className="header-class">Kontakt</h2>
                     <p className="text-class">
                         <FiMapPin className="icons-class"/>
@@ -34,7 +34,7 @@ export default function Footer() {
                         692 721 022 
                     </p>
                 </Col>
-                <Col md={3} sm={6} className="column-class">
+                <Col md={3} className="column-class">
                     <h2 className="header-class">Aplikacja</h2>
                     <p className="text-class">
                         <FaReact className="icons-class"/>
@@ -45,7 +45,7 @@ export default function Footer() {
                         <br />
                     </p>
                 </Col>
-                <Col md={3} sm={6} className="column-class">
+                <Col md={3} className="column-class">
                     <Link className="links" to=""><FaFacebookSquare className="icons-class"/></Link>
                     <Link className="links" to=""><FaTwitter className="icons-class"/></Link>
                 </Col>

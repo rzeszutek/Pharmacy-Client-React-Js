@@ -1,3 +1,15 @@
+.pharmacy-wrapper {
+    width: 66.6%; 
+    padding-top: 100px
+}
+
+@media screen and (max-width: 768px) {
+    .pharmacy-wrapper {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .label-icon {
     margin: 20px auto;
     display: block;
@@ -41,10 +53,22 @@
 
 .services-wrapper {
      margin-left: 50%;
+}
 
-    @media screen and (max-width: 768px) {
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 768px) {
+    .services-wrapper {
+        margin: auto;
+        text-align: center;
+    }   
+}
+
+.services-header {
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .services-header {
+        text-align: center;
     }
 }
 

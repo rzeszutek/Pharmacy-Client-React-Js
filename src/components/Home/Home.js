@@ -23,10 +23,8 @@ export default function Home() {
                 backgroundRepeat: "no-repeat",
                 height: "450px"
               }}>
-          <Row style={{
-            paddingTop: "100px"
-          }}>
-            <Col sm={8} style={{
+          <Row className="pharmacy-wrapper">
+            <Col style={{
               display: "flex",
               justifyContent: "center"
             }}> 
@@ -90,7 +88,7 @@ export default function Home() {
               marginTop: "50px"
             }}>
               <div className="services-wrapper">
-              <h1 style={{ fontWeight: "bold"}}>Usługi</h1>
+              <h1 className="services-header">Usługi</h1>
               <ul className="list-wrapper">
                 <li><BiRightArrowAlt className="list-element"/><a className="a-wrapper">Cursus risus at ultrices.</a></li>
                 <li><BiRightArrowAlt className="list-element"/><a className="a-wrapper">Mattis pellentesque id nibh tortor id aliquet.</a></li>

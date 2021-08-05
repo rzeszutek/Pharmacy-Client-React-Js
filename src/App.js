@@ -7,7 +7,7 @@ import Equipment from './components/Equipment/Equipment.js';
 import Prescription from './components/Prescription/Prescription.js';
 import Contact from './components/Contact/Contact.js';
 import Login from './components/Login/Login.js';
-import SignUp from './components/SignUp/SignUp.js';
+import SignUp from './components/SignUp.js';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {

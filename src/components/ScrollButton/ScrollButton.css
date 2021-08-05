@@ -6,3 +6,10 @@
     cursor: pointer;
     color: red;
 }
+
+@media screen and (max-width: 768px) {
+    .button-wrapper {
+        right: 10px;
+        bottom: 35px;
+    }
+}
