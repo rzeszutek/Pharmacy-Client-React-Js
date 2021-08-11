@@ -9,8 +9,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function Menu() {
   return (
-    <div className="container">
-        <nav className="navbar navbar-expand-md navbar-light">
+    <div className="shadow"> 
+        <nav className="container navbar navbar-expand-md navbar-light">
           <a className="navbar-brand"><FontAwesomeIcon icon={faHeartbeat} color="red" /></a>
           <a href="" className="navbar-brand">Apteka Online</a>
           <button className="navbar-toggler"

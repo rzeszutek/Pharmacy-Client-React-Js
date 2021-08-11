@@ -1,0 +1,31 @@
+.medicines-container {
+    
+}
+
+.medicine-search {
+    padding-top: 50px;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+@media screen and (max-width: 621px) {
+    .medicine-search {
+        display: none;
+    }
+}
+
+.medicine-wrapper {
+    padding-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .row .medicine-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+}
